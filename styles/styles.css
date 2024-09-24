@@ -26,7 +26,7 @@ p {
 }
 
 main {
-    max-width: width 840px;
+    max-width: width 600px;
 }
 
 aside {
@@ -40,13 +40,16 @@ aside {
 }
 
 aside img {
-    width: 200px
+    width: 200px;
     height: auto;
 }
 
 main img {
     width: 150px;
     height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
 }
 
 footer {

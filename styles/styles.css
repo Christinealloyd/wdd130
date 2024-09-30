@@ -1,41 +1,58 @@
-nav{
-    background-color: steelblue;
-    padding: 10px;
+:root {
+    --primary-color: steelblue;
+    --secondary-color: white;
+    --background-color: #eee;
+    --text-color: #333;
+    --border-color: rgba(0, 0, 0, 0.2);
+    --box-shadow-color: gray;
+    --padding-small: 10px;
+    --padding-medium: 20px;
+    --padding-large: 1rem;
+    --max-width: 840px;
+    --nav-padding: 10px;
+    --nav-link-padding: 20px;
+    --img-width: 150px;
+    --aside-width: 20rem;
 }
 
-nav a{
-    color:white;
+nav {
+    background-color: var(--primary-color);
+    padding: var(--nav-padding);
+}
+
+nav a {
+    color: var(--secondary-color);
     display: block;
-    padding: 20px;
+    padding: var(--nav-link-padding);
 }
 
 h1 {
-    color:steelblue;
+    color: var(--primary-color);
 }
 
 main img {
-    width: 150px;
+    width: var(--img-width);
     height: auto;
-    border: 1px solid steelblue;
-    padding:2px;
-    box-shadow: 0 0 30px gray;
+    border: 1px solid var(--primary-color);
+    padding: 2px;
+    box-shadow: 0 0 30px var(--box-shadow-color);
 }
 
 p {
-  padding: 0;  
+    padding: 0;
 }
 
 main {
-    max-width: 840px;
+    max-width: var(--max-width);
 }
 
 aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    width: var(--aside-width);
+    margin: var(--padding-medium);
+    border: 1px solid var(--border-color);
+    padding: var(--padding-medium);
+    background-color: var(--background-color);
+    color: var(--text-color);
     text-align: center;
 }
 

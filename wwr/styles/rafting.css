@@ -1,169 +1,162 @@
-/* Define CSS variables for better color contrast */
 :root {
-  --primary-color: #F7F7F7; /* Light background color */
-  --secondary-color: #3B8C57; /* Dark green for header/footer */
-  --accent1-color: #F04E30; /* Bright red for headings */
-  --accent2-color: #C8D0B3; /* Soft cream for accents */
-  --text-color: #333333; /* Dark gray for text */
-  --heading-color: #2D2D2D; /* Darker gray for headings */
-  --link-color: #FFFFFF; /* Change to white for higher contrast on footer */
-  --link-hover-color: #FFCC00; /* Bright yellow for link hover */
+  --primary-color: #F7F7F7; 
+  --secondary-color: #3B8C57; 
+  --accent1-color: #F04E30; 
+  --accent2-color: #C8D0B3; 
+  --text-color: #333333; 
+  --heading-color: #2D2D2D; 
+  --link-color: #FFD700; /* Changed link color to Gold */
+  --link-hover-color: #FFCC00; /* Hover color for links */
+  --footer-text-color: #FFFFFF; 
 }
 
-/* General styling */
 body {
-  font-family: 'Montserrat', sans-serif; /* Font family */
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
-  color: var(--text-color); /* Set text color */
-  background-color: var(--primary-color); /* Set background color */
-  max-width: 1200px; /* Maximum width for content */
-  margin: 0 auto; /* Center the body */
+  font-family: 'Montserrat', sans-serif; 
+  margin: 0; 
+  padding: 0; 
+  color: var(--text-color); 
+  background-color: var(--primary-color); 
+  max-width: 1200px; 
+  margin: 0 auto; 
 }
 
 h1, h2 {
-  color: var(--heading-color); /* Heading color */
+  color: var(--heading-color); 
 }
 
 p {
-  color: var(--text-color); /* Text color */
-  line-height: 1.6; /* Line height for readability */
+  color: var(--text-color); 
+  line-height: 1.6; 
 }
 
-/* Header styling with CSS Grid */
 header {
-  display: grid; /* Grid layout for the header */
-  grid-template-columns: 1fr 2fr; /* Two-column layout */
-  align-items: center; /* Center items vertically */
-  padding: 10px 20px; /* Padding around header */
-  background-color: var(--secondary-color); /* Background color for header */
+  display: grid; 
+  grid-template-columns: 1fr 2fr; 
+  align-items: center; 
+  padding: 10px 20px; 
+  background-color: var(--secondary-color); 
 }
 
 header img {
-  width: 100px; /* Logo width */
+  width: 100px; 
 }
 
 nav {
-  display: flex; /* Flexbox for horizontal layout */
-  justify-content: space-around; /* Space items evenly */
+  display: flex; 
+  justify-content: space-around; 
 }
 
 nav a {
-  color: #FFFFFF; /* Change to white for higher contrast */
-  text-decoration: none; /* Remove underline from links */
-  font-weight: bold; /* Bold text for links */
-  transition: color 0.3s; /* Smooth color transition */
+  color: var(--link-color); 
+  text-decoration: none; 
+  font-weight: bold; 
+  transition: color 0.3s; 
 }
 
 nav a:hover {
-  color: var(--link-hover-color); /* Bright yellow color on hover */
+  color: var(--link-hover-color); 
 }
 
-/* Hero section */
 .hero {
-  position: relative; /* Position for overlay text */
-  text-align: center; /* Center text */
+  position: relative; 
+  text-align: center; 
 }
 
 .hero img {
-  width: 100%; /* Full width image */
-  height: auto; /* Maintain aspect ratio */
+  width: 100%; 
+  height: auto; 
 }
 
 .hero h1 {
-  position: absolute; /* Position text overlay */
-  top: 50%; /* Center vertically */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Adjust position */
-  font-size: 3rem; /* Large font size for hero text */
-  color: white; /* White color for hero text */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  font-size: 3rem; 
+  color: white; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
 }
 
-/* Article styling */
 article {
-  margin: 20px 0; /* Margin around articles */
-  padding: 20px; /* Padding inside articles */
-  background-color: white; /* Background color for articles */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: 20px 0; 
+  padding: 20px; 
+  background-color: white; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 article img {
-  float: right; /* Float image to the right */
-  margin-left: 20px; /* Space between text and image */
-  width: 200px; /* Fixed image width */
-  height: auto; /* Maintain aspect ratio */
+  float: right; 
+  margin-left: 20px; 
+  width: 200px; 
+  height: auto; 
 }
 
-/* History Section with two-column layout */
 section.history {
-  display: grid; /* Grid layout */
-  grid-template-columns: 1fr 1fr; /* Two-column layout */
-  gap: 20px; /* Space between columns */
-  align-items: center; /* Center items vertically */
-  padding: 20px; /* Padding around section */
-  background-color: var(--accent2-color); /* Background color */
-  color: black; /* Dark text for contrast */
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px; 
+  align-items: center; 
+  padding: 20px; 
+  background-color: var(--accent2-color); 
+  color: black; 
 }
 
 section.history h2 {
-  grid-column: span 2; /* Span across both columns */
-  text-align: center; /* Center heading */
-  font-size: 2rem; /* Heading font size */
+  grid-column: span 2; 
+  text-align: center; 
+  font-size: 2rem; 
 }
 
 section.history p {
-  margin: 0; /* Remove default margin */
+  margin: 0; 
 }
 
-/* Adventure section with figure and captions */
 section.adventure {
-  display: flex; /* Flexbox layout */
-  justify-content: space-around; /* Space items evenly */
-  margin: 20px 0; /* Margin around section */
+  display: flex; 
+  justify-content: space-around; 
+  margin: 20px 0; 
 }
 
 .adventure figure {
-  text-align: center; /* Center figure text */
+  text-align: center; 
 }
 
 .adventure img {
-  width: 100px; /* Fixed image width */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Block display */
-  margin: 0 auto; /* Center image */
+  width: 100px; 
+  height: auto; 
+  display: block; 
+  margin: 0 auto; 
 }
 
 .adventure figcaption {
-  margin-top: 10px; /* Space above caption */
-  font-size: 0.9rem; /* Caption font size */
-  color: var(--heading-color); /* Caption color */
+  margin-top: 10px; 
+  font-size: 0.9rem; 
+  color: var(--heading-color); 
 }
 
-/* Footer styling */
 footer {
-  display: flex; /* Flexbox layout */
-  justify-content: space-between; /* Space items evenly */
-  align-items: center; /* Center items vertically */
-  padding: 20px; /* Padding around footer */
-  background-color: var(--secondary-color); /* Background color for footer */
-  color: var(--link-color); /* Change to white for higher contrast */
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 20px; 
+  background-color: var(--secondary-color); 
+  color: var(--footer-text-color); 
 }
 
 footer p {
-  margin: 0; /* Remove default margin */
+  margin: 0; 
 }
 
 footer a {
-  text-decoration: none; /* Remove underline from footer links */
-  margin-left: 10px; /* Space between links */
-  color: var(--link-color); /* Change to white for higher contrast */
+  text-decoration: none; 
+  margin-left: 10px; 
+  color: var(--footer-text-color); 
 }
 
 footer a img {
-  width: 24px; /* Size for social media icons */
-  height: 24px; /* Size for social media icons */
+  width: 24px; 
+  height: 24px; 
 }
 
 

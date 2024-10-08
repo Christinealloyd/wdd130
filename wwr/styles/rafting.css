@@ -1,13 +1,13 @@
-/* Define CSS variables */
+/* Define CSS variables for better color contrast */
 :root {
-  --primary-color: #D7F9F1; /* Light background color */
-  --secondary-color: #7AA095; /* Secondary background color */
-  --accent1-color: #40531B; /* Darker accent for headings */
-  --accent2-color: #618B4A; /* Lighter accent color */
-  --text-color: #333; /* Dark text color for readability */
-  --heading-color: #3C4A3F; /* Updated heading color for better contrast */
-  --link-color: #FFFFFF; /* White color for links */
-  --link-hover-color: #FFD700; /* Color for links on hover */
+  --primary-color: #F7F7F7; /* Light background color */
+  --secondary-color: #3B8C57; /* Dark green for header/footer */
+  --accent1-color: #F04E30; /* Bright red for headings */
+  --accent2-color: #C8D0B3; /* Soft cream for accents */
+  --text-color: #333333; /* Dark gray for text */
+  --heading-color: #2D2D2D; /* Darker gray for headings */
+  --link-color: #004A99; /* Dark blue for links */
+  --link-hover-color: #FFCC00; /* Bright yellow for link hover */
 }
 
 /* General styling */
@@ -49,14 +49,14 @@ nav {
 }
 
 nav a {
-  color: var(--link-color); /* White color for links */
+  color: var(--link-color); /* Dark blue color for links */
   text-decoration: none; /* Remove underline from links */
   font-weight: bold; /* Bold text for links */
   transition: color 0.3s; /* Smooth color transition */
 }
 
 nav a:hover {
-  color: var(--link-hover-color); /* Change link color on hover */
+  color: var(--link-hover-color); /* Bright yellow color on hover */
 }
 
 /* Hero section */
@@ -104,14 +104,13 @@ section.history {
   align-items: center; /* Center items vertically */
   padding: 20px; /* Padding around section */
   background-color: var(--accent2-color); /* Background color */
-  color: white; /* Text color for white contrast */
+  color: black; /* Dark text for contrast */
 }
 
 section.history h2 {
   grid-column: span 2; /* Span across both columns */
   text-align: center; /* Center heading */
   font-size: 2rem; /* Heading font size */
-  color: #E5E5E5; /* Light color for heading to improve contrast */
 }
 
 section.history p {
@@ -139,7 +138,7 @@ section.adventure {
 .adventure figcaption {
   margin-top: 10px; /* Space above caption */
   font-size: 0.9rem; /* Caption font size */
-  color: var(--accent1-color); /* Caption color */
+  color: var(--heading-color); /* Caption color */
 }
 
 /* Footer styling */
@@ -159,12 +158,14 @@ footer p {
 footer a {
   text-decoration: none; /* Remove underline from footer links */
   margin-left: 10px; /* Space between links */
+  color: var(--link-color); /* Dark blue for links */
 }
 
 footer a img {
   width: 24px; /* Size for social media icons */
   height: 24px; /* Size for social media icons */
 }
+
 
 
 

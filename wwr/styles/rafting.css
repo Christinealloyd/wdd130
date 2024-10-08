@@ -6,7 +6,7 @@
   --accent2-color: #C8D0B3; /* Soft cream for accents */
   --text-color: #333333; /* Dark gray for text */
   --heading-color: #2D2D2D; /* Darker gray for headings */
-  --link-color: #004A99; /* Dark blue for links */
+  --link-color: #FFFFFF; /* Change to white for higher contrast on footer */
   --link-hover-color: #FFCC00; /* Bright yellow for link hover */
 }
 
@@ -49,7 +49,7 @@ nav {
 }
 
 nav a {
-  color: var(--link-color); /* Dark blue color for links */
+  color: #FFFFFF; /* Change to white for higher contrast */
   text-decoration: none; /* Remove underline from links */
   font-weight: bold; /* Bold text for links */
   transition: color 0.3s; /* Smooth color transition */
@@ -148,7 +148,7 @@ footer {
   align-items: center; /* Center items vertically */
   padding: 20px; /* Padding around footer */
   background-color: var(--secondary-color); /* Background color for footer */
-  color: white; /* Text color for footer */
+  color: var(--link-color); /* Change to white for higher contrast */
 }
 
 footer p {
@@ -158,7 +158,7 @@ footer p {
 footer a {
   text-decoration: none; /* Remove underline from footer links */
   margin-left: 10px; /* Space between links */
-  color: var(--link-color); /* Dark blue for links */
+  color: var(--link-color); /* Change to white for higher contrast */
 }
 
 footer a img {

@@ -5,9 +5,9 @@
   --accent2-color: #C8D0B3; 
   --text-color: #333333; 
   --heading-color: #2D2D2D; 
-  --link-color: #FFD700; /* Changed link color to Gold */
-  --link-hover-color: #FFCC00; /* Hover color for links */
-  --footer-text-color: #FFFFFF; 
+  --link-color: #ffffff; 
+  --link-hover-color: #fffffd; 
+  --footer-text-color: #000000; 
 }
 
 body {

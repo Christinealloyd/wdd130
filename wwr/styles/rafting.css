@@ -1,11 +1,11 @@
 /* Define CSS variables */
 :root {
-  --primary-color: #D7F9F1;
-  --secondary-color: #7AA095;
-  --accent1-color: #40531B;
-  --accent2-color: #618B4A;
-  --text-color: #333;
-  --heading-color: #40531B;
+  --primary-color: #D7F9F1; /* Light background */
+  --secondary-color: #7AA095; /* Secondary background */
+  --accent1-color: #40531B; /* Darker accent for text */
+  --accent2-color: #618B4A; /* Light accent color */
+  --text-color: #333; /* Updated text color for contrast */
+  --heading-color: #2A2A2A; /* Updated heading color for contrast */
 }
 
 /* General styling */
@@ -47,7 +47,7 @@ nav {
 }
 
 nav a {
-  color: white;
+  color: white; /* Change link color for better contrast */
   text-decoration: none;
   font-weight: bold;
 }
@@ -157,4 +157,5 @@ footer a img {
   width: 24px;
   height: 24px;
 }
+
 

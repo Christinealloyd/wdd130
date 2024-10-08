@@ -1,97 +1,160 @@
 /* Define CSS variables */
 :root {
-    --primary-color: #D7F9F1;
-    --secondary-color: #7AA095;
-    --accent1-color: #40531B;
-    --accent2-color: #618B4A;
-    --text-color: #333;
-    --heading-color: #40531B;
-  }
-  
-  /* General styling */
-  body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-    color: var(--text-color);
-    background-color: var(--primary-color);
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  h1, h2 {
-    color: var(--heading-color);
-  }
-  
-  p {
-    color: var(--text-color);
-    line-height: 1.6;
-  }
-  
-  /* Remove underline from social media links */
-  footer a {
-    text-decoration: none;
-  }
-  
-  footer a img {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-  }
-  
-  /* Hero section */
-  .hero {
-    position: relative;
-  }
-  
-  .hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  
-  .hero h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3rem;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-  }
-  
-  /* Article styling */
-  article {
-    position: absolute;
-    bottom: 10%;
-    left: 10%;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 8px;
-  }
-  
-  article img {
-    float: right;
-    margin-left: 20px;
-    width: 200px;
-    height: auto;
-  }
-  
-  /* Images in the gallery section */
-  section img {
-    width: 48%;
-    margin: 1%;
-  }
-  
-  /* Footer styling */
-  footer {
-    text-align: center;
-    padding: 20px;
-    background-color: var(--secondary-color);
-    color: white;
-  }
-  
-  footer p {
-    margin: 0;
-  }
-  
+  --primary-color: #D7F9F1;
+  --secondary-color: #7AA095;
+  --accent1-color: #40531B;
+  --accent2-color: #618B4A;
+  --text-color: #333;
+  --heading-color: #40531B;
+}
+
+/* General styling */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  background-color: var(--primary-color);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  color: var(--heading-color);
+}
+
+p {
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Header styling with CSS Grid */
+header {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+}
+
+header img {
+  width: 100px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Article styling */
+article {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+article img {
+  float: right;
+  margin-left: 20px;
+  width: 200px;
+  height: auto;
+}
+
+/* History Section with two-column layout */
+section.history {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--accent2-color);
+  color: white;
+}
+
+section.history h2 {
+  grid-column: span 2;
+  text-align: center;
+  font-size: 2rem;
+}
+
+section.history p {
+  margin: 0;
+}
+
+/* Adventure section with figure and captions */
+section.adventure {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.adventure figure {
+  text-align: center;
+}
+
+.adventure img {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.adventure figcaption {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: var(--accent1-color);
+}
+
+/* Footer styling */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+footer a img {
+  width: 24px;
+  height: 24px;
+}
+

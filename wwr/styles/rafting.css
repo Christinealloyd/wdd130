@@ -1,161 +1,168 @@
 /* Define CSS variables */
 :root {
-  --primary-color: #D7F9F1; /* Light background */
-  --secondary-color: #7AA095; /* Secondary background */
-  --accent1-color: #40531B; /* Darker accent for text */
-  --accent2-color: #618B4A; /* Light accent color */
-  --text-color: #333; /* Updated text color for contrast */
-  --heading-color: #2A2A2A; /* Updated heading color for contrast */
+  --primary-color: #D7F9F1; /* Light background color */
+  --secondary-color: #7AA095; /* Secondary background color */
+  --accent1-color: #40531B; /* Darker accent for headings */
+  --accent2-color: #618B4A; /* Lighter accent color */
+  --text-color: #333; /* Dark text color for readability */
+  --heading-color: #40531B; /* Color for headings */
+  --link-color: #FFFFFF; /* White color for links */
 }
 
 /* General styling */
 body {
-  font-family: 'Montserrat', sans-serif;
-  margin: 0;
-  padding: 0;
-  color: var(--text-color);
-  background-color: var(--primary-color);
-  max-width: 1200px;
-  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif; /* Font family */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  color: var(--text-color); /* Set text color */
+  background-color: var(--primary-color); /* Set background color */
+  max-width: 1200px; /* Maximum width for content */
+  margin: 0 auto; /* Center the body */
 }
 
 h1, h2 {
-  color: var(--heading-color);
+  color: var(--heading-color); /* Heading color */
 }
 
 p {
-  color: var(--text-color);
-  line-height: 1.6;
+  color: var(--text-color); /* Text color */
+  line-height: 1.6; /* Line height for readability */
 }
 
 /* Header styling with CSS Grid */
 header {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: var(--secondary-color);
+  display: grid; /* Grid layout for the header */
+  grid-template-columns: 1fr 2fr; /* Two-column layout */
+  align-items: center; /* Center items vertically */
+  padding: 10px 20px; /* Padding around header */
+  background-color: var(--secondary-color); /* Background color for header */
 }
 
 header img {
-  width: 100px;
+  width: 100px; /* Logo width */
 }
 
 nav {
-  display: flex;
-  justify-content: space-around;
+  display: flex; /* Flexbox for horizontal layout */
+  justify-content: space-around; /* Space items evenly */
 }
 
 nav a {
-  color: white; /* Change link color for better contrast */
-  text-decoration: none;
-  font-weight: bold;
+  color: var(--link-color); /* White color for links */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold; /* Bold text for links */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+nav a:hover {
+  color: #FFD700; /* Change link color on hover */
 }
 
 /* Hero section */
 .hero {
-  position: relative;
-  text-align: center;
+  position: relative; /* Position for overlay text */
+  text-align: center; /* Center text */
 }
 
 .hero img {
-  width: 100%;
-  height: auto;
+  width: 100%; /* Full width image */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .hero h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 3rem;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  position: absolute; /* Position text overlay */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust position */
+  font-size: 3rem; /* Large font size for hero text */
+  color: white; /* White color for hero text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
 }
 
 /* Article styling */
 article {
-  margin: 20px 0;
-  padding: 20px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0; /* Margin around articles */
+  padding: 20px; /* Padding inside articles */
+  background-color: white; /* Background color for articles */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 article img {
-  float: right;
-  margin-left: 20px;
-  width: 200px;
-  height: auto;
+  float: right; /* Float image to the right */
+  margin-left: 20px; /* Space between text and image */
+  width: 200px; /* Fixed image width */
+  height: auto; /* Maintain aspect ratio */
 }
 
 /* History Section with two-column layout */
 section.history {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  align-items: center;
-  padding: 20px;
-  background-color: var(--accent2-color);
-  color: white;
+  display: grid; /* Grid layout */
+  grid-template-columns: 1fr 1fr; /* Two-column layout */
+  gap: 20px; /* Space between columns */
+  align-items: center; /* Center items vertically */
+  padding: 20px; /* Padding around section */
+  background-color: var(--accent2-color); /* Background color */
+  color: white; /* Text color for white contrast */
 }
 
 section.history h2 {
-  grid-column: span 2;
-  text-align: center;
-  font-size: 2rem;
+  grid-column: span 2; /* Span across both columns */
+  text-align: center; /* Center heading */
+  font-size: 2rem; /* Heading font size */
 }
 
 section.history p {
-  margin: 0;
+  margin: 0; /* Remove default margin */
 }
 
 /* Adventure section with figure and captions */
 section.adventure {
-  display: flex;
-  justify-content: space-around;
-  margin: 20px 0;
+  display: flex; /* Flexbox layout */
+  justify-content: space-around; /* Space items evenly */
+  margin: 20px 0; /* Margin around section */
 }
 
 .adventure figure {
-  text-align: center;
+  text-align: center; /* Center figure text */
 }
 
 .adventure img {
-  width: 100px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+  width: 100px; /* Fixed image width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Block display */
+  margin: 0 auto; /* Center image */
 }
 
 .adventure figcaption {
-  margin-top: 10px;
-  font-size: 0.9rem;
-  color: var(--accent1-color);
+  margin-top: 10px; /* Space above caption */
+  font-size: 0.9rem; /* Caption font size */
+  color: var(--accent1-color); /* Caption color */
 }
 
 /* Footer styling */
 footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: var(--secondary-color);
-  color: white;
+  display: flex; /* Flexbox layout */
+  justify-content: space-between; /* Space items evenly */
+  align-items: center; /* Center items vertically */
+  padding: 20px; /* Padding around footer */
+  background-color: var(--secondary-color); /* Background color for footer */
+  color: white; /* Text color for footer */
 }
 
 footer p {
-  margin: 0;
+  margin: 0; /* Remove default margin */
 }
 
 footer a {
-  text-decoration: none;
-  margin-left: 10px;
+  text-decoration: none; /* Remove underline from footer links */
+  margin-left: 10px; /* Space between links */
 }
 
 footer a img {
-  width: 24px;
-  height: 24px;
+  width: 24px; /* Size for social media icons */
+  height: 24px; /* Size for social media icons */
 }
+
 
 

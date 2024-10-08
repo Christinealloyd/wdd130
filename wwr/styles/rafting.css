@@ -5,8 +5,9 @@
   --accent1-color: #40531B; /* Darker accent for headings */
   --accent2-color: #618B4A; /* Lighter accent color */
   --text-color: #333; /* Dark text color for readability */
-  --heading-color: #40531B; /* Color for headings */
+  --heading-color: #3C4A3F; /* Updated heading color for better contrast */
   --link-color: #FFFFFF; /* White color for links */
+  --link-hover-color: #FFD700; /* Color for links on hover */
 }
 
 /* General styling */
@@ -55,7 +56,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #FFD700; /* Change link color on hover */
+  color: var(--link-hover-color); /* Change link color on hover */
 }
 
 /* Hero section */
@@ -110,6 +111,7 @@ section.history h2 {
   grid-column: span 2; /* Span across both columns */
   text-align: center; /* Center heading */
   font-size: 2rem; /* Heading font size */
+  color: #E5E5E5; /* Light color for heading to improve contrast */
 }
 
 section.history p {
@@ -163,6 +165,7 @@ footer a img {
   width: 24px; /* Size for social media icons */
   height: 24px; /* Size for social media icons */
 }
+
 
 
 

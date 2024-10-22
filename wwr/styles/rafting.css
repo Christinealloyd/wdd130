@@ -1,0 +1,390 @@
+:root {
+    --background-color: #ececec;  /* Light Gray */
+    --secondary-color: #9fd3c7;   /* Light Teal */
+    --tertiary-color: #385170;     /* Dark Teal */
+    --quaternary-color: #142d4c;   /* Dark Blue */
+}
+
+/* General Styles */
+body {
+    background: var(--background-color);
+    font-family: 'Open Sans', sans-serif;
+    color: var(--quaternary-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: var(--tertiary-color);
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: var(--background-color);
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+    color: var(--tertiary-color);
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background: var(--secondary-color);
+    border-radius: 8px;
+}
+
+.employee {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.employee img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+form {
+    background: var(--background-color);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--tertiary-color);
+    border-radius: 4px;
+}
+
+button {
+    background: var(--tertiary-color);
+    color: var(--background-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background: var(--quaternary-color);
+}
+
+footer {
+    background: var(--tertiary-color);
+    color: var(--background-color);
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer .social-links img {
+    width: 30px;
+    margin: 0 5px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F7F7F7; /* Primary Color */
+    color: #333333; /* Text Color */
+}
+
+header {
+    background-color: #3B8C57; /* Secondary Color */
+    color: #FFFFFF; /* White for text in header */
+}
+
+nav a {
+    color: #FFFFFF; /* White for links in nav */
+}
+
+.hero {
+    background-color: #C8D0B3; /* Accent 2 Color */
+    color: #2D2D2D; /* Heading Color */
+}
+
+h1, h2 {
+    color: #2D2D2D; /* Heading Color */
+}
+
+.testimonials-grid .testimonial {
+    border: 1px solid #F04E30; /* Accent 1 Color for border */
+    background-color: #FFFFFF; /* White background for testimonials */
+}
+
+footer {
+    background-color: #3B8C57; /* Secondary Color */
+    color: #000000; /* Footer Text Color */
+}
+
+.cta-btn {
+    background-color: #F04E30; /* Accent 1 Color for buttons */
+    color: #FFFFFF; /* White for button text */
+}
+
+.testimonial img {
+    width: 80px; /* Adjust the width as needed */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 50%; /* Optional: makes the images circular */
+}
+
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F7F7F7; /* Background color */
+    color: #333333; /* Text color */
+}
+
+/* Header */
+header {
+    background-color: #3B8C57; /* Header background color */
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    max-width: 150px; /* Logo size */
+}
+
+/* Navigation */
+nav a {
+    margin: 0 15px;
+    color: #ffffff; /* Link color */
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('images/hero-bg.jpg'); /* Background image for hero section */
+    background-size: cover;
+    color: #ffffff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Call to Action */
+.cta {
+    background-color: #F04E30; /* Call to action background color */
+    color: #ffffff;
+    padding: 30px;
+    text-align: center;
+}
+
+.cta .btn {
+    background-color: #2D2D2D; /* Button color */
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Trip Descriptions */
+.trip-descriptions {
+    display: flex;
+    flex-wrap: wrap; /* Wrap articles on smaller screens */
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.trip-descriptions article {
+    background-color: #ffffff; /* Background for trip cards */
+    border: 1px solid #C8D0B3; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    margin: 10px;
+    padding: 15px;
+    width: calc(30% - 40px); /* Responsive width for trip cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.trip-descriptions img {
+    max-width: 100%; /* Responsive images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Trips Table */
+.trips-table {
+    margin: 20px;
+}
+
+.trips-table table {
+    width: 100%;
+    border-collapse: collapse; /* Remove spaces between cells */
+}
+
+.trips-table th, .trips-table td {
+    border: 1px solid #C8D0B3; /* Border for table cells */
+    padding: 10px;
+    text-align: left; /* Left align text */
+}
+
+.trips-table th {
+    background-color: #3B8C57; /* Header background color */
+    color: #ffffff; /* Header text color */
+}
+
+/* Footer */
+footer {
+    background-color: #2D2D2D; /* Footer background color */
+    color: #ffffff; /* Footer text color */
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    margin: 0 10px;
+}
+
+footer img {
+    width: 20px; /* Social media icon size */
+    vertical-align: middle; /* Center icons */
+}
+
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F7F7F7; /* Background color */
+    color: #333333; /* Text color */
+}
+
+/* Header */
+header {
+    background-color: #3B8C57; /* Header background color */
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo {
+    max-width: 150px; /* Logo size */
+}
+
+/* Navigation */
+nav a {
+    margin: 0 15px;
+    color: #ffffff; /* Link color */
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    position: relative; /* Relative positioning for absolute elements */
+}
+
+.hero-image {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.hero h1 {
+    position: absolute; /* Overlay text */
+    bottom: 20px; /* Position text */
+    left: 20px; /* Position text */
+    color: #ffffff; /* Text color */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px; /* Padding around text */
+}
+
+/* Article */
+article {
+    padding: 20px;
+    text-align: center; /* Center text */
+}
+
+.client-img {
+    max-width: 80%; /* Responsive client image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* History Section */
+.history {
+    background-color: #ffffff; /* Background color */
+    padding: 20px;
+    margin: 20px; /* Margin around the section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.history-content {
+    display: flex;
+    flex-wrap: wrap; /* Wrap content */
+    justify-content: space-around; /* Space around elements */
+}
+
+.history-content p {
+    width: calc(50% - 20px); /* Responsive paragraph width */
+    margin: 10px; /* Margin around paragraphs */
+}
+
+/* Adventure Section */
+.adventure {
+    padding: 20px;
+    text-align: center; /* Center text */
+}
+
+.adventure figure {
+    display: inline-block; /* Align figures in a row */
+    margin: 10px; /* Margin around figures */
+    width: calc(20% - 20px); /* Responsive figure width */
+}
+
+.adventure img {
+    max-width: 100%; /* Responsive images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.adventure figcaption {
+    margin-top: 5px; /* Space between image and caption */
+}
+
+/* Footer */
+footer {
+    background-color: #2D2D2D; /* Footer background color */
+    color: #ffffff; /* Footer text color */
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    margin: 0 10px;
+}
+
+footer img {
+    width: 20px; /* Social media icon size */
+    vertical-align: middle; /* Center icons */
+}

@@ -5,7 +5,6 @@
     --quaternary-color: #142d4c;   /* Dark Blue */
 }
 
-/* General Styles */
 body {
     background: var(--background-color);
     font-family: 'Open Sans', sans-serif;
@@ -388,3 +387,91 @@ footer img {
     width: 20px; /* Social media icon size */
     vertical-align: middle; /* Center icons */
 }
+
+.hero-image {
+    background-image: url('imagees/heroa.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-text {
+    background-color: rgba(0, 0, 0, 0.5); /* Optional overlay to make text more readable */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .hero-text h1 {
+    font-size: 4rem; /* Customize this size for the heading */
+    margin-bottom: 10px;
+  }
+  
+  .hero-text p {
+    font-size: 1.5rem; /* Subheading size */
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  .newsletter-container {
+    background-color: rgba(0, 0, 0, 0.5); /* Slight transparent background for readability */
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .newsletter-form label {
+    margin: 5px 0;
+    color: rgb(83, 81, 81);
+  }
+  
+  .newsletter-form input {
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .newsletter-form button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #3B8C57; /* Use your accent color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .newsletter-form button:hover {
+    background-color: #2D6E43; /* Darken the button on hover */
+  }
+
+  .cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #F04E30; /* Use your accent color */
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #D93C1F; /* Darken on hover */
+  }
+  
+  

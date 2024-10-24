@@ -1,8 +1,8 @@
 :root {
-    --background-color: #ececec;  /* Light Gray */
-    --secondary-color: #9fd3c7;   /* Light Teal */
-    --tertiary-color: #385170;     /* Dark Teal */
-    --quaternary-color: #142d4c;   /* Dark Blue */
+    --background-color: #ececec;  
+    --secondary-color: #9fd3c7;   
+    --tertiary-color: #385170;   
+    --quaternary-color: #142d4c; 
 }
 
 body {
@@ -114,79 +114,79 @@ footer .social-links img {
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #F7F7F7; /* Primary Color */
-    color: #333333; /* Text Color */
+    background-color: #F7F7F7; 
+    color: #333333; 
 }
 
 header {
-    background-color: #3B8C57; /* Secondary Color */
-    color: #FFFFFF; /* White for text in header */
+    background-color: #3B8C57;
+    color: #FFFFFF; 
 }
 
 nav a {
-    color: #FFFFFF; /* White for links in nav */
+    color: #FFFFFF; 
 }
 
 .hero {
-    background-color: #C8D0B3; /* Accent 2 Color */
-    color: #2D2D2D; /* Heading Color */
+    background-color: #C8D0B3; 
+    color: #2D2D2D; 
 }
 
 h1, h2 {
-    color: #2D2D2D; /* Heading Color */
+    color: #2D2D2D; 
 }
 
 .testimonials-grid .testimonial {
-    border: 1px solid #F04E30; /* Accent 1 Color for border */
-    background-color: #FFFFFF; /* White background for testimonials */
+    border: 1px solid #F04E30; 
+    background-color: #FFFFFF; 
 }
 
 footer {
-    background-color: #3B8C57; /* Secondary Color */
-    color: #000000; /* Footer Text Color */
+    background-color: #3B8C57; 
+    color: #000000; 
 }
 
 .cta-btn {
-    background-color: #F04E30; /* Accent 1 Color for buttons */
-    color: #FFFFFF; /* White for button text */
+    background-color: #F04E30; 
+    color: #FFFFFF; 
 }
 
 .testimonial img {
-    width: 80px; /* Adjust the width as needed */
-    height: auto; /* Maintains the aspect ratio */
-    border-radius: 50%; /* Optional: makes the images circular */
+    width: 80px; 
+    height: auto; 
+    border-radius: 50%; 
 }
 
-/* General Styles */
+
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F7F7F7; /* Background color */
-    color: #333333; /* Text color */
+    background-color: #F7F7F7; 
+    color: #333333; 
 }
 
 /* Header */
 header {
-    background-color: #3B8C57; /* Header background color */
+    background-color: #3B8C57;
     padding: 20px;
     text-align: center;
 }
 
 header img {
-    max-width: 150px; /* Logo size */
+    max-width: 150px; 
 }
 
 /* Navigation */
 nav a {
     margin: 0 15px;
-    color: #ffffff; /* Link color */
+    color: #ffffff; 
     text-decoration: none;
 }
 
 /* Hero Section */
 .hero {
-    background-image: url('images/hero-bg.jpg'); /* Background image for hero section */
+    background-image: url('images/hero-bg.jpg'); 
     background-size: cover;
     color: #ffffff;
     padding: 50px 0;
@@ -195,42 +195,41 @@ nav a {
 
 /* Call to Action */
 .cta {
-    background-color: #F04E30; /* Call to action background color */
+    background-color: #F04E30;
     color: #ffffff;
     padding: 30px;
     text-align: center;
 }
 
 .cta .btn {
-    background-color: #2D2D2D; /* Button color */
+    background-color: #2D2D2D; 
     color: #ffffff;
     padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px; /* Rounded corners */
+    border-radius: 5px;
 }
 
 /* Trip Descriptions */
 .trip-descriptions {
     display: flex;
-    flex-wrap: wrap; /* Wrap articles on smaller screens */
+    flex-wrap: wrap; 
     justify-content: space-around;
     padding: 20px;
 }
 
 .trip-descriptions article {
-    background-color: #ffffff; /* Background for trip cards */
-    border: 1px solid #C8D0B3; /* Light border */
-    border-radius: 8px; /* Rounded corners */
+    background-color: #ffffff;
+    border: 1px solid #C8D0B3; 
     margin: 10px;
     padding: 15px;
-    width: calc(30% - 40px); /* Responsive width for trip cards */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    width: calc(30% - 40px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .trip-descriptions img {
-    max-width: 100%; /* Responsive images */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 5px; /* Rounded corners */
+    max-width: 100%;
+    height: auto; 
+    border-radius: 5px; 
 }
 
 /* Trips Table */
@@ -240,24 +239,24 @@ nav a {
 
 .trips-table table {
     width: 100%;
-    border-collapse: collapse; /* Remove spaces between cells */
+    border-collapse: collapse; 
 }
 
 .trips-table th, .trips-table td {
-    border: 1px solid #C8D0B3; /* Border for table cells */
+    border: 1px solid #C8D0B3; 
     padding: 10px;
-    text-align: left; /* Left align text */
+    text-align: left; 
 }
 
 .trips-table th {
-    background-color: #3B8C57; /* Header background color */
-    color: #ffffff; /* Header text color */
+    background-color: #3B8C57; 
+    color: #ffffff; 
 }
 
 /* Footer */
 footer {
-    background-color: #2D2D2D; /* Footer background color */
-    color: #ffffff; /* Footer text color */
+    background-color: #2D2D2D; 
+    color: #ffffff;
     padding: 20px;
     text-align: center;
 }
@@ -267,114 +266,114 @@ footer a {
 }
 
 footer img {
-    width: 20px; /* Social media icon size */
-    vertical-align: middle; /* Center icons */
+    width: 20px; 
+    vertical-align: middle; 
 }
 
-/* General Styles */
+
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F7F7F7; /* Background color */
-    color: #333333; /* Text color */
+    background-color: #F7F7F7; 
+    color: #333333; 
 }
 
 /* Header */
 header {
-    background-color: #3B8C57; /* Header background color */
+    background-color: #3B8C57; 
     padding: 20px;
     text-align: center;
 }
 
 header .logo {
-    max-width: 150px; /* Logo size */
+    max-width: 150px; 
 }
 
 /* Navigation */
 nav a {
     margin: 0 15px;
-    color: #ffffff; /* Link color */
+    color: #ffffff; 
     text-decoration: none;
 }
 
 /* Hero Section */
 .hero {
-    position: relative; /* Relative positioning for absolute elements */
+    position: relative; 
 }
 
 .hero-image {
-    width: 100%; /* Responsive image */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; 
+    height: auto; 
 }
 
 .hero h1 {
-    position: absolute; /* Overlay text */
-    bottom: 20px; /* Position text */
-    left: 20px; /* Position text */
-    color: #ffffff; /* Text color */
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    padding: 10px; /* Padding around text */
+    position: absolute; 
+    bottom: 20px; 
+    left: 20px;
+    color: #ffffff; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px; 
 }
 
 /* Article */
 article {
     padding: 20px;
-    text-align: center; /* Center text */
+    text-align: center; 
 }
 
 .client-img {
-    max-width: 80%; /* Responsive client image */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 5px; /* Rounded corners */
+    max-width: 80%; 
+    height: auto; 
+    border-radius: 5px; 
 }
 
 /* History Section */
 .history {
-    background-color: #ffffff; /* Background color */
+    background-color: #ffffff; 
     padding: 20px;
-    margin: 20px; /* Margin around the section */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    margin: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .history-content {
     display: flex;
-    flex-wrap: wrap; /* Wrap content */
-    justify-content: space-around; /* Space around elements */
+    flex-wrap: wrap; 
+    justify-content: space-around; 
 }
 
 .history-content p {
-    width: calc(50% - 20px); /* Responsive paragraph width */
-    margin: 10px; /* Margin around paragraphs */
+    width: calc(50% - 20px); 
+    margin: 10px; 
 }
 
-/* Adventure Section */
+
 .adventure {
     padding: 20px;
-    text-align: center; /* Center text */
+    text-align: center; 
 }
 
 .adventure figure {
-    display: inline-block; /* Align figures in a row */
-    margin: 10px; /* Margin around figures */
-    width: calc(20% - 20px); /* Responsive figure width */
+    display: inline-block; 
+    margin: 10px; 
+    width: calc(20% - 20px); 
 }
 
 .adventure img {
-    max-width: 100%; /* Responsive images */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 5px; /* Rounded corners */
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 5px; 
 }
 
 .adventure figcaption {
-    margin-top: 5px; /* Space between image and caption */
+    margin-top: 5px; 
 }
 
-/* Footer */
+
 footer {
-    background-color: #2D2D2D; /* Footer background color */
-    color: #ffffff; /* Footer text color */
+    background-color: #2D2D2D; 
+    color: #ffffff; 
     padding: 20px;
     text-align: center;
 }
@@ -384,15 +383,15 @@ footer a {
 }
 
 footer img {
-    width: 20px; /* Social media icon size */
-    vertical-align: middle; /* Center icons */
+    width: 20px; 
+    vertical-align: middle;
 }
 
 .hero-image {
     background-image: url('imagees/heroa.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh; /* Full viewport height */
+    height: 100vh; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -402,18 +401,18 @@ footer img {
   }
   
   .hero-text {
-    background-color: rgba(0, 0, 0, 0.5); /* Optional overlay to make text more readable */
+    background-color: rgba(0, 0, 0, 0.5); 
     padding: 20px;
     border-radius: 10px;
   }
   
   .hero-text h1 {
-    font-size: 4rem; /* Customize this size for the heading */
+    font-size: 4rem; 
     margin-bottom: 10px;
   }
   
   .hero-text p {
-    font-size: 1.5rem; /* Subheading size */
+    font-size: 1.5rem; 
   }
 
   .hero h1 {
@@ -421,7 +420,7 @@ footer img {
     margin-bottom: 20px;
   }
   .newsletter-container {
-    background-color: rgba(0, 0, 0, 0.5); /* Slight transparent background for readability */
+    background-color: rgba(0, 0, 0, 0.5); 
     padding: 20px;
     border-radius: 8px;
   }
@@ -447,7 +446,7 @@ footer img {
   .newsletter-form button {
     padding: 10px 20px;
     margin-top: 10px;
-    background-color: #3B8C57; /* Use your accent color */
+    background-color: #3B8C57; 
     color: white;
     border: none;
     border-radius: 5px;
@@ -455,14 +454,14 @@ footer img {
   }
   
   .newsletter-form button:hover {
-    background-color: #2D6E43; /* Darken the button on hover */
+    background-color: #2D6E43; 
   }
 
   .cta-button {
     display: inline-block;
     margin-top: 20px;
     padding: 15px 30px;
-    background-color: #F04E30; /* Use your accent color */
+    background-color: #F04E30; 
     color: white;
     font-size: 1.2rem;
     text-decoration: none;
@@ -471,7 +470,7 @@ footer img {
   }
   
   .cta-button:hover {
-    background-color: #D93C1F; /* Darken on hover */
+    background-color: #D93C1F; 
   }
   
   
